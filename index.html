@@ -1,0 +1,539 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Portfolio</title>
+    <meta name="description" content="Full Stack Developer specializing in React, Node.js, and modern web technologies. View my portfolio and get in touch.">
+    
+    <!-- Open Graph Tags -->
+    <meta property="og:title" content="Alex Rodriguez - Full Stack Developer Portfolio">
+    <meta property="og:description" content="Full Stack Developer specializing in React, Node.js, and modern web technologies. View my portfolio and get in touch.">
+    <meta property="og:type" content="website">
+    
+    <!-- Google Fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700;800;900&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome for Icons -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Lucide Icons -->
+    <script src="https://unpkg.com/lucide@latest/dist/umd/lucide.js"></script>
+    
+    <link rel="stylesheet" href="prot.css">
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div id="loading-screen" class="loading-screen">
+        <div class="loading-content">
+            <div class="spinner"></div>
+            <p>Loading Portfolio...</p>
+        </div>
+    </div>
+
+    <!-- Scroll Progress Indicator -->
+    <div id="scroll-progress" class="scroll-indicator"></div>
+
+    <!-- Navigation -->
+    <nav id="navbar" class="navbar">
+        <div class="nav-container">
+            <div class="nav-content">
+                <div class="nav-logo gradient-text">YV</div>
+                
+                <!-- Desktop Navigation -->
+                <div class="nav-desktop">
+                    <a href="#hero" class="nav-link active">Home</a>
+                    <a href="#about" class="nav-link">About</a>
+                    <a href="#skills" class="nav-link">Skills</a>
+                    <a href="#projects" class="nav-link">Projects</a>
+                    <a href="#resume" class="nav-link">Resume</a>
+                    <a href="#blog" class="nav-link">Blog</a>
+                    <a href="#contact" class="nav-link">Contact</a>
+                </div>
+                
+                <!-- Theme Toggle & Mobile Menu -->
+                <div class="nav-actions">
+                    <button id="theme-toggle" class="theme-toggle">
+                        <i class="fas fa-moon" id="theme-icon"></i>
+                    </button>
+                    <button id="mobile-menu-toggle" class="mobile-menu-toggle">
+                        <i class="fas fa-bars" id="menu-icon"></i>
+                    </button>
+                </div>
+            </div>
+            
+            <!-- Mobile Navigation -->
+            <div id="mobile-menu" class="mobile-menu">
+                <a href="#hero" class="mobile-nav-link">Home</a>
+                <a href="#about" class="mobile-nav-link">About</a>
+                <a href="#skills" class="mobile-nav-link">Skills</a>
+                <a href="#projects" class="mobile-nav-link">Projects</a>
+                <a href="#resume" class="mobile-nav-link">Resume</a>
+                <a href="#blog" class="mobile-nav-link">Blog</a>
+                <a href="#contact" class="mobile-nav-link">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Main Content -->
+    <main>
+        <!-- Hero Section -->
+        <section id="hero" class="hero-section">
+            <div class="hero-background"></div>
+            <div class="hero-floating">
+                <div class="floating-element floating-1"></div>
+                <div class="floating-element floating-2"></div>
+                <div class="floating-element floating-3"></div>
+                <div class="floating-element floating-4"></div>
+            </div>
+            
+            <div class="hero-content">
+                <div class="profile-image animate-fade-in">
+                    <img src="pic me.jpeg" alt="Alex Rodriguez">
+                </div>
+                
+                <h1 class="hero-title animate-fade-in">
+                    <span class="gradient-text">Yuvraj Yadav</span>
+                </h1>
+                
+                <div class="hero-subtitle animate-fade-in">
+                    <span id="typing-text"></span>
+                    <span class="cursor">|</span>
+                </div>
+                
+                <p class="hero-description animate-fade-in">
+                    Crafting digital experiences with modern technologies. 
+                    Passionate about creating scalable, user-centric applications that make a  difference and unique one.
+                </p>
+                
+                <div class="hero-buttons animate-fade-in">
+                    <button class="btn btn-primary" onclick="scrollToSection('contact')">
+                        Get In Touch
+                    </button>
+                    <button class="btn btn-outline" onclick="scrollToSection('projects')">
+                        View My Work
+                    </button>
+                </div>
+                
+                <div class="hero-social animate-fade-in">
+                    <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yuvraj-yadav-8a9725364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox" target="_blank"><i class="fas fa-envelope"></i></a>
+                </div>
+            </div>
+            
+            <div class="scroll-indicator">
+                <i class="fas fa-chevron-down"></i>
+            </div>
+        </section>
+
+        <!-- About Section -->
+        <section id="about" class="about-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title gradient-text">About Me</h2>
+                    <p class="section-subtitle">Get to know the person behind the code</p>
+                </div>
+                
+                <div class="about-content">
+                    <div class="about-text">
+                        <h3>Hello! I'm Yuvraj Yadav</h3>
+                        <p>
+                           An undergraduate student specializing in Artificial Intelligence and Machine Learning at CIT. I’m passionate about exploring cutting-edge technologies, building intelligent systems, and applying machine learning to solve real-world problems. This portfolio highlights my academic projects, research interests, and skills as I continue to grow in the AI/ML field.
+                        </p>
+                        
+                        <div class="timeline">
+                            <div class="timeline-item">
+                                <div class="timeline-icon education">
+                                    <i class="fas fa-graduation-cap"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>Computer Science </h4>
+                                    <p>+2 at Arniko Awasiya Secondary School • 2022 School life </p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-icon work">
+                                    <i class="fas fa-briefcase"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>Senior Full Stack Developer</h4>
+                                    <p> Youtube & Coursera 2025 - Present</p>
+                                </div>
+                            </div>
+                            <div class="timeline-item">
+                                <div class="timeline-icon certification">
+                                    <i class="fas fa-award"></i>
+                                </div>
+                                <div class="timeline-content">
+                                    <h4>AWS Certified Developer</h4>
+                                    <p> Codigol,Simplearn,Apana Collage • 2019-2022</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="about-image">
+                        <img src="https://scontent.fblr24-2.fna.fbcdn.net/v/t39.30808-6/475665628_538231242598608_7682514349866818551_n.jpg?_nc_cat=110&ccb=1-7&_nc_sid=833d8c&_nc_ohc=lHZi-3C_5MEQ7kNvwG9uFxq&_nc_oc=AdmNP-BwDhY7t_LRnCIxUytyj1VhAxcDUGtanZybyTFxNl3IOxxnuovW907QtEyeEYs&_nc_zt=23&_nc_ht=scontent.fblr24-2.fna&_nc_gid=uaBrwCqdHKySAviqIRFNRA&oh=00_Afb8TVySql-qBL9nl-pd6uofPQ7uEPqYjSK91mhtfNfW2w&oe=68CAB357" alt="About Me" style="object-fit: contain;">
+                            <div class="decoration decoration-1"></div>
+                            <div class="decoration decoration-2"></div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Skills Section -->
+        <section id="skills" class="skills-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title gradient-text">Skills & Expertise</h2>
+                    <p class="section-subtitle">Technologies and tools I work with to bring ideas to life</p>
+                </div>
+                
+                <div class="skills-grid">
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <div class="skill-icon frontend">
+                                <i class="fas fa-code"></i>
+                            </div>
+                            <h3>Frontend Development</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">React/Next.js</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percent="95"></div>
+                                </div>
+                                <span class="skill-percent">95%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">TypeScript</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percent="90"></div>
+                                </div>
+                                <span class="skill-percent">90%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Tailwind CSS</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percent="88"></div>
+                                </div>
+                                <span class="skill-percent">88%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <div class="skill-icon backend">
+                                <i class="fas fa-server"></i>
+                            </div>
+                            <h3>Backend Development</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">Node.js/Express</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percent="92"></div>
+                                </div>
+                                <span class="skill-percent">92%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Python/Django</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percent="85"></div>
+                                </div>
+                                <span class="skill-percent">85%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">PostgreSQL/MongoDB</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percent="80"></div>
+                                </div>
+                                <span class="skill-percent">80%</span>
+                            </div>
+                        </div>
+                    </div>
+
+                    <div class="skill-category">
+                        <div class="skill-header">
+                            <div class="skill-icon tools">
+                                <i class="fas fa-wrench"></i>
+                            </div>
+                            <h3>Tools & Soft Skills</h3>
+                        </div>
+                        <div class="skill-list">
+                            <div class="skill-item">
+                                <span class="skill-name">AWS/Docker</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percent="87"></div>
+                                </div>
+                                <span class="skill-percent">87%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Team Leadership</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percent="93"></div>
+                                </div>
+                                <span class="skill-percent">93%</span>
+                            </div>
+                            <div class="skill-item">
+                                <span class="skill-name">Problem Solving</span>
+                                <div class="skill-bar">
+                                    <div class="skill-progress" data-percent="96"></div>
+                                </div>
+                                <span class="skill-percent">96%</span>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="technologies">
+                    <h3>Technologies I Work With</h3>
+                    <div class="tech-grid">
+                        <div class="tech-item">
+                            <i class="fab fa-react"></i>
+                            <span>React</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-node-js"></i>
+                            <span>Node.js</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-python"></i>
+                            <span>Python</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fas fa-database"></i>
+                            <span>MongoDB</span>
+                        </div>
+                          <div class="tech-item">
+                            <i class="fas fa-database"></i>
+                            <span>MySQL</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-docker"></i>
+                            <span>Docker</span>
+                        </div>
+                        <div class="tech-item">
+                            <i class="fab fa-git-alt"></i>
+                            <span>Git</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Projects Section -->
+        <section id="projects" class="projects-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title gradient-text">Featured Projects</h2>
+                    <p class="section-subtitle">A showcase of my recent work and side projects</p>
+                </div>
+                
+                <div class="project-filters">
+                    <button class="filter-btn active" data-filter="all"><a href="https://forms.gle/KQf9EzzKyXQpvUCQA" target="_blank">All Projects</a></button>
+                </div>
+                
+                <div class="projects-grid" id="projects-grid">
+                   
+                </div>
+            </div>
+        </section>
+
+        <!-- Resume Section -->
+        <section id="resume" class="resume-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title gradient-text">Resume & Experience</h2>
+                    <p class="section-subtitle">Download my resume or explore my professional journey</p>
+                    <button class="btn btn-primary" onclick="downloadResume()">
+                        <i class="fas fa-download"></i>
+                        Download Resume (PDF)
+                    </button>
+                </div>
+                
+                <div class="resume-content">
+                    <div class="experience-section">
+                        <h3><i class="fas fa-briefcase"></i> Work Experience</h3>
+                        <div class="experience-list" id="work-experience">
+                            <!-- Work experience will be dynamically inserted -->
+                        </div>
+                    </div>
+                    
+                    <div class="education-section">
+                        <h3><i class="fas fa-graduation-cap"></i> Education & Certifications</h3>
+                        <div class="education-list" id="education-list">
+                            <!-- Education will be dynamically inserted -->
+                        </div>
+                        
+                        <div class="achievements">
+                            <h4>Key Achievements</h4>
+                            <ul>
+                                <li><i class="fas fa-trophy"></i> Won 2nd place in National Hackathon 2022</li>
+                                <li><i class="fas fa-star"></i> Maintained 4.9/5 client satisfaction rating</li>
+                                <li><i class="fas fa-users"></i> Mentored 15+ junior developers</li>
+                                <li><i class="fas fa-code-branch"></i> 100+ open source contributions</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <!-- Blog Section -->
+        <section id="blog" class="blog-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title gradient-text">Latest Blog Posts</h2>
+                    <p class="section-subtitle">Thoughts on development, technology trends, and lessons learned</p>
+                </div>
+                
+                <div class="blog-grid" id="blog-grid">
+                    <!-- Blog posts will be dynamically inserted -->
+                </div>
+                
+                <div class="blog-cta">
+                    <button class="btn btn-primary">
+                        View All Posts
+                        <i class="fas fa-arrow-right"></i>
+                    </button>
+                </div>
+            </div>
+        </section>
+
+        <!-- Contact Section -->
+        <section id="contact" class="contact-section">
+            <div class="container">
+                <div class="section-header">
+                    <h2 class="section-title gradient-text">Get In Touch</h2>
+                    <p class="section-subtitle">Have a project in mind or want to collaborate? I'd love to hear from you!</p>
+                </div>
+                
+                <div class="contact-content">
+                    <div class="contact-info">
+                        <h3>Let's Start a Conversation</h3>
+                        
+                        <div class="contact-items">
+                            <div class="contact-item">
+                                <div class="contact-icon email">
+                                    <i class="fas fa-envelope"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Email</h4>
+                                    <p>roshanyy2017@gmail.com</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon phone">
+                                    <i class="fas fa-phone"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Phone</h4>
+                                    <p>9036942157</p>
+                                </div>
+                            </div>
+                            <div class="contact-item">
+                                <div class="contact-icon location">
+                                    <i class="fas fa-map-marker-alt"></i>
+                                </div>
+                                <div class="contact-details">
+                                    <h4>Location</h4>
+                                    <p>Siraha,Nepal</p>
+                                </div>
+                            </div>
+                        </div>
+                        
+                        <div class="social-links">
+                            <h4>Follow Me</h4>
+                            <div class="social-grid">
+                                <a href="https://github.com/" target="_blank"><i class="fab fa-github"></i></a>
+                                <a href="https://www.linkedin.com/in/yuvraj-yadav-8a9725364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank"><i class="fab fa-linkedin"></i></a>
+                                <a href="https://dribbble.com/" target="_blank"><i class="fab fa-dribbble"></i></a>
+                            </div>
+                        </div>
+                    </div>
+                    
+                    <div class="contact-form-container">
+                        <form id="contact-form" class="contact-form" action="form.php" method="POST">
+                            <div class="form-row">
+                                <div class="form-group">
+                                    <label for="name">Name *</label>
+                                    <input type="text" id="name" name="name" required>
+                                </div>
+                                <div class="form-group">
+                                    <label for="email">Email *</label>
+                                    <input type="email" id="email" name="email" required>
+                                </div>
+                            </div>
+                            <div class="form-group">
+                                <label for="subject">Subject</label>
+                                <input type="text" id="subject" name="subject">
+                            </div>
+                            <div class="form-group">
+                                <label for="message">Message *</label>
+                                <textarea id="message" name="message" rows="5" required></textarea>
+                            </div>
+                            <button type="submit" class="btn btn-primary btn-full">
+                                <span class="btn-text">Send Message</span>
+                                <i class="fas fa-paper-plane"></i>
+                                <div class="btn-loader">
+                                    <div class="spinner-small"></div>
+                                    <span>Sending...</span>
+                                </div>
+                            </button>
+                        </form>
+                        <br>
+                         <a href="https://forms.gle/7XHxvMwgRYPnWzPDA" target="_blank"><button type="massage" class="btn btn-primary btn-full">
+                                Enter Your Message
+                                <i class="fas fa-paper-plane"></i>
+                                <div class="btn-loader">
+                                    <div class="spinner-small"></div>
+                                    <span>Sending...</span>
+                              </button>
+                            </a>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-content">
+                <h3 class="gradient-text">Yuvraj Yadav</h3>
+                <p>Full Stack Developer passionate about creating digital experiences that make a difference.</p>
+                
+                <div class="footer-social">
+                    <a href="https://github.com/" target="_blank" aria-label="GitHub"><i class="fab fa-github"></i></a>
+                    <a href="https://www.linkedin.com/in/yuvraj-yadav-8a9725364?utm_source=share&utm_campaign=share_via&utm_content=profile&utm_medium=android_app" target="_blank" aria-label="LinkedIn"><i class="fab fa-linkedin"></i></a>
+                    <a href="https://mail.google.com/mail/u/0/#inbox" aria-label="Email"><i class="fas fa-envelope"></i></a>
+                    <a href="https://dribbble.com/" target="_blank" aria-label="Dribbble"><i class="fab fa-dribbble"></i></a>
+                </div>
+                
+                <div class="footer-bottom">
+                    <p>&copy; 2025 Yuvraj Yadav. All rights reserved. Built with modern web technologies.</p>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="scroll-to-top">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- Toast Notification -->
+    <div id="toast" class="toast">
+        <div class="toast-content">
+            <i class="toast-icon"></i>
+            <span class="toast-message"></span>
+        </div>
+    </div>
+
+    <script src="prot.js"></script>
+</body>
+</html>
